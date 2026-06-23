@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Free Car Identifier</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background-color: #f4f4f9; }
+    #imagePreview { max-width: 300px; margin: 20px auto; border-radius: 10px; display: none; }
+    button, input { padding: 10px; margin: 10px; font-size: 16px; cursor: pointer; }
+    #status { font-weight: bold; color: #555; }
+    #result { font-size: 24px; color: #d9534f; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Car Identifier 🚗</h1>
+  <p id="status">Loading the AI Brain... (Please wait a few seconds)</p>
+  
+  <input type="file" id="imageUpload" accept="image/*" disabled>
+  <br>
+  <img id="imagePreview" alt="Your uploaded car">
+  
+  <p id="result"></p>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
